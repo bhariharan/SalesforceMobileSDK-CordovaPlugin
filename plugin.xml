@@ -163,7 +163,7 @@
       <string name="app_package">$PACKAGE_NAME</string>
     </config-file>
 
-    <hook type="after_plugin_install" src="tools/postinstall-android.js" />
+    <!-- <hook type="after_plugin_install" src="tools/postinstall-android.js" /> -->
     <hook type="after_platform_add" src="tools/after-platform-add-android.js" />
     <hook type="after_plugin_add" src="tools/after-platform-add-android.js" />
     <hook type="after_prepare" src="tools/after-prepare-android.js" />
