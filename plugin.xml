@@ -163,6 +163,14 @@
       <string name="app_package">$PACKAGE_NAME</string>
     </config-file>
 
+    <framework src="com.google.android.gms:play-services-gcm:7.5.0" />
+    <framework src="src/android/libs/SalesforceAnalytics" custom="true" />
+    <framework src="src/android/libs/SalesforceSDK" custom="true" />
+    <framework src="src/android/libs/SmartStore" custom="true" />
+    <framework src="src/android/libs/SmartSync" custom="true" />
+    <framework src="src/android/libs/SalesforceHybrid" custom="true" />
+    <!-- <framework src="build-extras.gradle" custom="true" type="gradleReference" /> -->
+
     <!-- <hook type="after_plugin_install" src="tools/postinstall-android.js" /> -->
     <hook type="after_platform_add" src="tools/after-platform-add-android.js" />
     <hook type="after_plugin_add" src="tools/after-platform-add-android.js" />
