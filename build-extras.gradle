@@ -1,0 +1,32 @@
+apply plugin: 'android-library'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+		exclude 'META-INF/LICENSE.txt'
+		exclude 'META-INF/DEPENDENCIES'
+		exclude 'META-INF/NOTICE'
+    }
+}
+
+ext.cdvCompileSdkVersion=android-24
+ext.cdvMinSdkVersion=19
+ext.cdvBuildToolsVersion=23.0.1
+
+repositories {
+	mavenCentral()
+    jcenter()
+
+	flatDir {
+		dirs 'libs'
+	}
+}
+
+// Adds required dependencies.
+dependencies {
+	compile(name:'SalesforceAnalytics-release', ext:'aar')
+	compile(name:'SalesforceSDK-release', ext:'aar')
+	compile(name:'SmartStore-release', ext:'aar')
+	compile(name:'SmartSync-release', ext:'aar')
+	compile(name:'SalesforceHybrid-release', ext:'aar')
+}
