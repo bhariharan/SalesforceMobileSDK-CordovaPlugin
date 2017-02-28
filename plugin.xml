@@ -197,6 +197,9 @@
       <string name="app_package">$PACKAGE_NAME</string>
     </config-file>
 
+    <!-- Including our plugin from jCenter -->
+    <framework src="com.salesforce.mobilesdk:SalesforceHybrid:5.0.1" />
+
     <hook type="after_plugin_install" src="tools/postinstall-android.js" />
   </platform>
 </plugin>
